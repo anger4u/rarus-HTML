@@ -1,0 +1,14 @@
+%svg-common {
+	background: url("../img/svgsprite.css.svg") no-repeat;
+}
+
+._svg-icon-header--img--vk {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+._svg-icon-header--img--vk-dims {
+	width: 32px;
+	height: 32px;
+}
+

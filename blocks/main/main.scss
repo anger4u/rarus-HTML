@@ -1,0 +1,64 @@
+.main {
+	font-family: $main-sans-serif;
+	color: $text-color;
+
+	&__container {
+		@include container;
+
+		display: flex;
+	}
+
+	&__profile, &__description {
+		display: flex;
+		flex-flow: 	column wrap;
+	}
+
+	&__profile {
+
+		&-img {
+			img {
+				max-width: 350px;
+				width: 100%;
+			}
+		}
+
+		&-info {
+			ul {
+				display: flex;
+				flex-flow: column wrap;
+				padding: 10px;
+
+				li:not(last-child) {
+					margin-bottom: 	10px;
+				}
+
+				span {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	&__description {
+		margin-left: 100px;
+		padding: 20px;
+
+		&-links {
+
+			ul {
+				display: flex;
+				flex-flow: column wrap;
+				padding: 10px;
+
+				li:not(last-child) {
+					margin-bottom: 	10px;
+				}
+
+				a {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+}

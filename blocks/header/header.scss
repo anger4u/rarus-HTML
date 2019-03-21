@@ -1,0 +1,80 @@
+.header-main {
+	background-color: $header-bg;
+    border-bottom: 1px solid $lgrey;
+    padding-top: 5px;
+	padding-bottom: 5px;
+
+	&__container {
+		@include container;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 60px;
+		font-family: $main-cursive;
+
+		@include media ((
+			flex-flow: (sm: column wrap)
+		));
+
+	}
+
+	a {
+		font-weight: 700;
+		font-family: $main-cursive;
+	}
+
+	&__name, &__contacts, {
+		margin: 0 30px;
+
+		@include media ((
+			margin: (md: 0)
+		));
+	}
+
+	&__name {
+
+		a {
+			font-size: 34px;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		span {
+			font-size: 18px;
+		}
+
+		&-list {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	&__phone {
+
+		a {
+			font-size: 28px;
+		}
+	}
+
+	&__email {
+		font-size: 22px;
+
+		a {
+			font-size: 20px;
+		}
+	}
+
+	&__vk {
+		margin: 0 15px;
+		width: 45px;
+		height: 45px;
+	}
+}
