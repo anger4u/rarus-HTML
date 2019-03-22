@@ -362,8 +362,8 @@ ul {
     font-family: "Caveat", cursive; }
   .header-main__name, .header-main__contacts {
     margin: 0 30px; }
-  .header-main__name a {
-    font-size: 34px; }
+  .header-main__name span {
+    font-size: 38px; }
   .header-main__contacts {
     display: -webkit-box;
     display: -ms-flexbox;
