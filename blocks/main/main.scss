@@ -70,9 +70,41 @@
 					margin-bottom: 	10px;
 				}
 
-				a {
-					font-weight: 700;
+				li {
+					display: flex;
+					align-items: center;
+					flex-wrap: wrap;
+
+					@include media ((
+						flex-direction: (mlg: column),
+						align-items: (mlg: flex-start)
+					));
+
+					a {
+						font-weight: 700;
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+						margin-right: 5px;
+
+						img {
+							margin-right: 10px;
+						}
+					}
+
+					& > span {
+						@include media ((
+							margin-left: (mlg: 42px)
+						));
+					}
+
+					.defis {
+						@include media ((
+							display: (mlg: none)
+						));
+					}
 				}
+
 			}
 		}
 
