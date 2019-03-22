@@ -76,5 +76,10 @@
 		margin: 0 15px;
 		width: 45px;
 		height: 45px;
+
+		@include media ((
+			width: (sm: 35px),
+			height: (sm: 35px)
+		));
 	}
 }

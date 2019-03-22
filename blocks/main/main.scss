@@ -22,6 +22,8 @@
 	&__profile {
 
 		&-img {
+			padding-top: 20px;
+
 			img {
 				max-width: 350px;
 				width: 100%;
@@ -54,12 +56,15 @@
 			padding: (md: 10px)
 		));
 
+		&-links, &-comment {
+			margin-bottom: 30px;
+		}
+
 		&-links {
 
 			ul {
 				display: flex;
 				flex-flow: column wrap;
-				padding: 10px;
 
 				li:not(last-child) {
 					margin-bottom: 	10px;
@@ -70,6 +75,15 @@
 				}
 			}
 		}
-	}
 
+		&-comment {
+			h3 {
+				margin: 5px 0;
+			}
+		}
+
+		&-links {
+			border-bottom: 1px solid #333;
+		}
+	}
 }
