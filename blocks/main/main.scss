@@ -56,17 +56,15 @@
 			padding: (md: 10px)
 		));
 
-		&-links, &-comment {
-			margin-bottom: 30px;
-		}
-
 		&-links {
+			border-bottom: 1px solid #333;
+			padding-bottom: 20px;
 
 			ul {
 				display: flex;
 				flex-flow: column wrap;
 
-				li:not(last-child) {
+				li:not(:last-child) {
 					margin-bottom: 	10px;
 				}
 
@@ -109,13 +107,28 @@
 		}
 
 		&-comment {
+			margin-bottom: 30px;
+
 			h3 {
 				margin: 5px 0;
 			}
 		}
 
-		&-links {
-			border-bottom: 1px solid #333;
+		&-share {
+			display: flex;
+			flex-flow: column;
+			align-items: flex-start;
+			padding: 30px 0;
+
+			h3 {
+				margin-right: 15px;
+				text-align: center;
+				margin-top: 0;
+			}
+
+			li {
+				padding: 5px;
+			}
 		}
 	}
 }

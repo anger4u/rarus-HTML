@@ -10,7 +10,7 @@
 		@include container;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: flex-end;
 		min-height: 60px;
 
 		@include media ((
@@ -30,22 +30,6 @@
 			@include media ((
 				text-align: (sm: center)
 			))
-		}
-	}
-
-	&__share {
-		display: flex;
-		align-items: center;
-
-		@include media ((
-			flex-flow: (sm: column wrap),
-			justify-content: (sm: center),
-			margin-bottom: (sm: 20px)
-		))
-
-		div {
-			margin-right: 15px;
-			text-align: center;
 		}
 	}
 }
