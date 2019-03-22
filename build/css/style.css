@@ -490,6 +490,19 @@ ul {
         -webkit-box-direction: normal;
             -ms-flex-flow: column wrap;
                 flex-flow: column wrap; }
+      .main__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .main__container {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .main__container {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
       .footer-main__container {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -498,4 +511,8 @@ ul {
           text-align: center; } }
     @media only screen and (max-width: 768px) {
       .header-main__name, .header-main__contacts {
-        margin: 0; } }
+        margin: 0; }
+      .main__description {
+        margin-left: 10px; }
+      .main__description {
+        padding: 10px; } }

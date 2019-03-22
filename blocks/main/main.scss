@@ -6,6 +6,12 @@
 		@include container;
 
 		display: flex;
+
+		@include media ((
+			flex-direction: (sm: column),
+			align-items: (sm: center),
+			justify-content: (sm: center)
+		));
 	}
 
 	&__profile, &__description {
@@ -42,6 +48,11 @@
 	&__description {
 		margin-left: 100px;
 		padding: 20px;
+
+		@include media ((
+			margin-left: (md: 10px),
+			padding: (md: 10px)
+		));
 
 		&-links {
 
